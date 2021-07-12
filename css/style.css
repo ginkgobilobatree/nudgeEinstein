@@ -43,7 +43,7 @@ body {
     left: -7rem;
     width: 30rem;
     height: 20rem;
-    background: url(/assets/pointingRight.png);
+    background: url(../assets/pointingRight.png);
     background-position: right center;
     animation: push .3s 1s linear;
 }
@@ -67,7 +67,7 @@ body {
     left: 20rem;
     width: 12rem;
     height: 12rem;
-    background: url(/assets/einstein.jpeg) center/186%;
+    background: url(../assets/einstein.jpeg) center/186%;
     border-radius: 50%;
     border: 3px solid goldenrod;
     animation: roll 3s 1.15s ease-out forwards;
