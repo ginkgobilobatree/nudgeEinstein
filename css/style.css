@@ -1,0 +1,105 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #272727;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: relative;
+    width: 90rem;
+    height: 38rem;
+    background: linear-gradient(#4682b4, #000);
+    z-index: -1;
+}
+
+.foreground {
+    position: relative;
+    width: 90rem;
+    height: 20rem;
+    background: linear-gradient(#141414, #3f3f3f);
+    overflow: hidden;
+}
+
+.pointingX {
+    position: absolute;
+    top: 2rem;
+    left: -7rem;
+    width: 30rem;
+    height: 20rem;
+    background: url(/assets/pointingRight.png);
+    background-position: right center;
+    animation: push .3s 1s linear;
+}
+
+@keyframes push {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translateX(3rem)
+    }
+    85% {
+        transform: translateY(-.5rem)
+    }
+}
+
+.coin {
+    position: relative;
+
+    top: 2rem;
+    left: 20rem;
+    width: 12rem;
+    height: 12rem;
+    background: url(/assets/einstein.jpeg) center/186%;
+    border-radius: 50%;
+    border: 3px solid goldenrod;
+    animation: roll 3s 1.15s ease-out forwards;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(0) rotateZ(0deg);
+    }
+
+    100% {
+        transform: translateX(400%) rotateZ(720deg);
+    }
+}
+
+.shadow {
+    position: relative;
+    top: 1.4rem;
+    left: 23.1rem;
+    width: 6rem;
+    height: .8rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px #665d2c;
+    animation: shadow 3s 1.15s ease-out forwards;
+}
+
+@keyframes shadow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(48rem);
+    }
+}
